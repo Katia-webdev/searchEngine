@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name=”description” content=”This is my custom search engine based on Google CSE JSON API”>
+    <meta name="title" content="Custom search engine based on Google JSON API">
+    <meta name="keywords" content="google json api, search engine, programmable search engine">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <title>My custom search engine - Google JSON API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---Google API Script--->
+    <script async defer src="https://apis.google.com/js/api.js"></script>
+
+
+    <!---HEADER---->
+    <header>
+        <!---LOGO---->
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png"
+                alt="Google Logo SVG" height="80vh" />
+        </div>
+
+        <!---SEARCH BAR---->
+        <div class="searchBar">
+            <input class="searchInput" placeholder="Type here..."></input>
+            <button type="submit" class="searchButton">SEARCH</button>
+        </div>
+    </header>
+
+
+    <!----SEARCH RESULTS---->
+    <section>
+        <div class="searchResult">
+        </div>
+    </section>
+
+
+
+    <!---FOOTER--->
+    <footer>
+        <a href="https://www.google.cz/" target="_blank">Proceed to real Google</a>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
