@@ -90,6 +90,8 @@ transition: all 0.4s ease 0s;
 /*SEARCH RESULT STYLES*/
 
 .searchResult {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: RGBA(255,255,255,0.31);
   padding: 25px;
@@ -143,24 +145,51 @@ font-size: 16px;
 		background-repeat: norepeat;
   }
   
-  .searchResultItem {
+   .searchResultItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 15px;
   }
 
   .searchImg {
-    flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 15px;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+  }
+  
+  .searchImg img {
+    max-width: 200px;
   }
 
   .searchBody {
-    flex-basis: 80%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .resultItemHeader {
-    flex-basis: 15%;
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+    font-size: 20px;
   }
 }
 
@@ -177,7 +206,50 @@ font-size: 16px;
     text-align: center;
   }
 
+  
+  .searchResultItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 15px;
+  }
+
+  .searchImg {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+  }
+  
+  .searchImg img {
+    max-width: 200px;
+  }
+
+  .searchBody {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .resultItemHeader {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
     font-size: 20px;
   }
 }
