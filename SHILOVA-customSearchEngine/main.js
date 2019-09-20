@@ -40,9 +40,29 @@ var renderResponse = function renderResponse(res) {
     
     //Getting page
     function makeList(jsonData) {
-        for (var x = 0; x < jsonData.length; x++) {
-            list.push(" <div class=\"searchResultItem\"> " + "<span class=\"resultItemHeader\">" + "<a href=\" " + jsonData[x].link + " \" target=\"_blank\">" + jsonData[x].title + "</a>" + "</span>" + "<div class=\"resultItemBody\"> " + jsonData[x].snippet + "</div>" + "</div>" + "<br>");
-        } 
+         for (var x = 0; x < jsonData.length; x++) {
+
+            //Check if image for the query exists
+            if (null != jsonData[x].pagemap.cse_image) {
+                imgUrl.src = jsonData[x].pagemap.cse_image[0].src;
+            } else {
+                imgUrl.src = "https://www.ggf.org.uk/wp-content/uploads/2018/03/jpg-icon.png";
+            }
+
+
+
+            list.push(" <div class=\"searchResultItem\"> " +
+                "<div class=\"searchImg\">" +
+                "<img src=\" " + imgUrl.src + "\" height=\"120px\" width=\"auto\"/> " +
+                "</div>" +
+                "<div class=\"searchBody\">" +
+                "<div class=\"resultItemHeader\">" +
+                "<a href=\" " + jsonData[x].link + " \" target=\"_blank\">" + jsonData[x].title + "</a>" + "</div>"
+                + "<br>" +
+                "<div class=\"resultItemBody\"> " + jsonData[x].snippet + "</div>" +
+                + "</div>" + "</div>" + "<br>");
+        }
+        
         
         //Making page buttons appear
         document.querySelector(".pageButtons").style.display = "block"; 
