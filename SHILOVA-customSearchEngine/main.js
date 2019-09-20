@@ -9,7 +9,7 @@ var responseField = document.querySelector('.searchResult');
 
 // Information to reach API
 var url = 'https://www.googleapis.com/customsearch/v1?';
-var apiKey = 'key=AIzaSyBhErRZoCNfURi1z1DoQDJXrgnDAKhmZok';
+var apiKey = 'key=AIzaSyAUZH-lCWHi9PkgQN57o9TIJoxrs0sFzIk';
 var cx = '&cx=008993671637674012003:y7jt0xhysdv';
 
 
