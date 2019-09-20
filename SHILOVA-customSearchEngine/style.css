@@ -90,10 +90,11 @@ transition: all 0.4s ease 0s;
 /*SEARCH RESULT STYLES*/
 
 .searchResult {
-  display: none;
+  display: flex;
   background-color: RGBA(255,255,255,0.31);
   padding: 25px;
   margin: 0 25px;
+  display: none;
 }
 
 
@@ -108,7 +109,8 @@ transition: all 0.4s ease 0s;
   width: 5vw;
   border-radius: 100px;
   color: white;
-  background-color: lightblue;
+  padding: 10px;
+  background-color: #3D6EC9;
 }
 
 
@@ -121,11 +123,6 @@ body {
   background-image: url("https://fsb.zobj.net/crop.php?r=0PB_d3AUi-AOai0CyQfD9YiTIM2S7lBd14eM_EL6tQ59qen-ZEMoi4kft_6RLOJYX8kJ0UaYtNHzzOuo42K1bA4FGowN7BAHeXSQKAVl3M_EJnyIfy-ZbGsVbTxvbU6DLNiXlOK7JimMQLGP4Z3R-tlg7aa2qNr03APU65zlzOvixns40-UD--VXSluseIDTJfiRJYJYDHKP6FFK");
   background-size: cover;
   background-repeat: norepeat;
-}
-
-
-.pageButtons input {
-  width: 10vw;
 }
 
 .resultItemHeader {
@@ -144,7 +141,27 @@ font-size: 16px;
 		background-image: url("https://i.pinimg.com/originals/bb/d3/23/bbd32350443fc9423ab7bd8459879f4f.jpg");
 		background-size: cover;
 		background-repeat: norepeat;
-	}
+  }
+  
+  .searchResultItem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .searchImg {
+    flex-basis: 20%;
+  }
+
+  .searchBody {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resultItemHeader {
+    flex-basis: 15%;
+  }
 }
 
 
