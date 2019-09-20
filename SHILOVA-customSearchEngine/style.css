@@ -1,0 +1,166 @@
+/*BASIC SET-UP*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 5%;
+  margin-bottom: 1%;
+  background-image: url("https://i.redd.it/3lxlwac0rfmx.png");
+  background-size: cover;
+  background-repeat: norepeat;
+  
+}
+
+/*LOGO*/
+.logo {
+  display: none;
+  text-align: center;
+}
+
+
+/*SEARCH BAR STYLES*/
+
+.searchBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.searchInput {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  margin-right: 10px;
+  border-radius: 100px;
+  padding: 1%;
+}
+
+.searchButton {
+  background-color: #3D6EC9;
+  color: white;
+  font-weight: 700;
+  border-radius: 100px;
+  padding: 10px;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.searchButton:hover {
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-webkit-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+}
+
+/*SEARCH RESULT STYLES*/
+
+.searchResult {
+  display: none;
+  background-color: RGBA(255,255,255,0.31);
+  padding: 25px;
+  margin: 0 25px;
+}
+
+
+/*Page Buttons*/
+.pageButtons {
+  margin: 2%;
+  display: none;
+  text-align:center;
+}
+
+.pageButtons input {
+  width: 5vw;
+  border-radius: 100px;
+  color: white;
+  background-color: lightblue;
+}
+
+
+/*Inalid Input Value*/
+.invalidValue {
+  border-color: red;
+}
+
+body {
+  background-image: url("https://fsb.zobj.net/crop.php?r=0PB_d3AUi-AOai0CyQfD9YiTIM2S7lBd14eM_EL6tQ59qen-ZEMoi4kft_6RLOJYX8kJ0UaYtNHzzOuo42K1bA4FGowN7BAHeXSQKAVl3M_EJnyIfy-ZbGsVbTxvbU6DLNiXlOK7JimMQLGP4Z3R-tlg7aa2qNr03APU65zlzOvixns40-UD--VXSluseIDTJfiRJYJYDHKP6FFK");
+  background-size: cover;
+  background-repeat: norepeat;
+}
+
+
+.pageButtons input {
+  width: 10vw;
+}
+
+.resultItemHeader {
+font-size: 16px;
+}
+
+.searchButton {
+  margin-right: 0;
+}
+
+/*RESPONSIVITY*/
+
+
+@media only screen and (min-width: 430px) and (max-width: 1079px){
+  body {
+		background-image: url("https://i.pinimg.com/originals/bb/d3/23/bbd32350443fc9423ab7bd8459879f4f.jpg");
+		background-size: cover;
+		background-repeat: norepeat;
+	}
+}
+
+
+@media only screen and (min-width: 1080px) {
+  body {
+    background-image: url("https://i.redd.it/3lxlwac0rfmx.png");
+    background-size: cover;
+    background-repeat: norepeat;
+  }
+
+  .logo {
+    display: block;
+    text-align: center;
+  }
+
+  .resultItemHeader {
+    font-size: 20px;
+  }
+}
